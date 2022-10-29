@@ -5,15 +5,11 @@
 }
 body{
     font-family: Helvetica, Tahoma, Sans-serif;
-}
-.container{
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    background-color: black;
+    color: white;
 }
 .container img{
-    width: 120px;
+    width: 120px;   
 }
 header .container{
     position: relative;
@@ -25,30 +21,27 @@ header #logotipo{
 }
 .menu{
    background-color: black;
-   text-align: right;
+   text-align: center;
 }
- /* .logo-image{
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -6px;
-} */
 .menu li{
     display: inline-block;
-    height: 60px;
-    padding-top: 40px;
-    padding-right: 8px;
+    height: 30px;
+    padding-top: 10px;
+    padding-right: 3%;
+    padding-left: 3%;
 }
-.menu li:hover{
+.menu li:hover:not(.search){
     background-color: hsl(30, 100%, 50%);
+}
+.navbar-brand{
+    text-align: center;
 }
 .menu li a{
     text-decoration: none;
     color:white;
-    padding-top: 40px;
+    padding-top: 16px;
 }
-.menu li a img{
+.menu a img{
     width: 120px;
 }
 .dropdown{
@@ -59,10 +52,19 @@ header #logotipo{
 .dropdown-content{
     display: none;
     position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 .dropdown-content a{
+    float:none;
     display: block;
+    /* padding: 12px 0; */
 } 
+.dropdown-content a:hover{
+    background-color: hsl(30, 100%, 50%);
+}
 .dropdown:hover .dropdown-content{
     display: block;
 }
@@ -72,6 +74,7 @@ header #logotipo{
 }
 #banner{
     width:100%;
-    height:720px;
-    background: url(img/house.jpg) no-repeat;
+    height:650px;
+    background: url(img/gray_theme_1200x800.jpg) no-repeat;
+    background-position: 50% 30%;
 }
