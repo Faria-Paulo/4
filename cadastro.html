@@ -47,38 +47,44 @@
         </nav>
     </header>
     <section>
-        <h1>Cadastre-se agora mesmo!</h1>
-        <form action="" method="post">
-            <div>
-                <label for="nome_cdt">Nome:</label>
-                <input type="text" id="nome_cdt" name="usuario_nome" placeholder="Seu nome...">
-            </div>
-            <div>
-                <label for="email_cdt">E-mail:</label>
-                <input type="email" id="email_cdt" name="usuario_email" placeholder="Seu e-mail...">
-            </div>
-            <div>
-                <label for="senha_cdt">Senha:</label>
-                <input type="password" id="senha_cdt" name="usuario_senha" placeholder="Sua senha...">
-            </div>
-            <div>
-                <label for="senha_cdt_confirm">Confirme:</label>
-                <input type="password" id="senha_cdt_confirm" name="usuario_senha_confirm" placeholder="Confirme sua senha...">
-            </div>
-            <div>
-                <input type="submit" class="send" name="acao" value="Enviar" >
-            </div><br>
-            <hr>
-            <div class="signup">
-                <button><a href="login.html">Já tem uma conta? Login</a></button>
-            </div>
-        </form>
+        <div class="content">
+            <h1>Cadastre-se agora mesmo!</h1>
+            <form id="form" action="" method="post">
+                <div>
+                    
+                    <input type="text" class="inputs required" oninput="nameValidate()"  name="usuario_nome" placeholder="Seu nome...">
+                    <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                </div>
+                <div>
+                
+                    <input type="email" class="inputs required" oninput="emailValidate()"  name="usuario_email" placeholder="Seu e-mail...">
+                    <span class="span-required">Digite um email válido</span>
+                </div>
+                <div>
+                    
+                    <input type="password" class="inputs required" oninput="mainPasswordValidate()" name="usuario_senha" placeholder="Sua senha...">
+                    <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                </div>
+                <div>
+                    
+                    <input type="password" class="inputs required" oninput="comparePassword()" name="usuario_senha_confirm" placeholder="Confirme sua senha...">
+                    <span class="span-required">As senhas devem ser compatíveis</span>
+                </div>
+                <div>
+                    <input type="submit" id="submit" name="acao" value="Enviar" >
+                </div><br>
+                <hr>
+                <div class="signup">
+                    <button><a href="login.html">Já tem uma conta? Login</a></button>
+                </div>
+            </form>
+        </div>    
         <div class="saida1"></div>
     </section>
     <footer>
         <div class="box-footer2">
            <ul class="social">
-                <li><a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" alt="logo_facebook"></a></li>
+                <li><a href="https://www.facebook.com/people/Unisoft_oficia/100087310756254/?is_tour_dismissed=true" target="_blank"><img src="img/facebook.png" alt="logo_facebook"></a></li>
                 <li><a href="https://www.instagram.com/unisoft_oficial/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="img/instagram_by_freepik.png" alt="logo_instagram"></a></li>
                 <li><a href="https://api.whatsapp.com/send?phone=5511953358010&text=" target="_blank"><img src="img/whatsapp_by_riajulislam.png" alt="whatsapp_logo"></a></li>
                 <li><a href="https://github.com/Faria-Paulo/4" target="_blank"><img src="img/github.png" alt="github_logo"></a></li>

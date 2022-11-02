@@ -146,6 +146,18 @@ section{
 .box p{
     padding: 20px;
 }
+.content{
+    overflow: auto;
+}
+.inputs{
+    padding:8px 5px;
+    outline: none;
+    border-radius: 3px;
+    transition: .3s;
+}
+.inputs:focus{
+    border-color: purple;
+}
 form{
     margin:50px auto;
     width: 400px;
@@ -164,8 +176,7 @@ label:hover{
 input, textarea{
     width: 250px;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid hsl(30, 100%, 100%);
+    box-sizing: border-box;   
 }
 input:focus, textarea:focus{
     border-color: hsl(30, 100%, 50%);
@@ -176,37 +187,53 @@ form input[type=text],
 form input[type=password]{
     width:100%;
     height: 45px;
-    border: 1px solid white;
+    border: none;
     padding-left: 10px;
     padding-right: 10px;
-    margin:10px 0px;
-    background-color: black;
+    margin:20px 0px;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
 }
 form input[type=submit]{
     width: 100%;
+    margin-top: 40px;
     height: 30px;
     cursor: pointer;
-    background-color: black;
-    color: white;
+    background-color: hsl(30, 100%, 50%);
+    color: black;
+    border: none;
+}
+form input[type=submit]:hover{
+    background-color: white;
 }
 form button{
     width:100%;
     height: 30px;
-    border: 1px solid white;
+    border: none;
+    border-radius: 3px;
     padding-left: 10px;
     padding-right: 10px;
     margin:20px 0px 10px;
     cursor: pointer;
-    background-color: black;
+    background-color: hsl(30, 100%, 50%);
+}
+form button:hover{
+    background-color: white;
 }
 form button a{
-    color: white;
+    color: black;
 }
 form button:focus{
     border-color: hsl(30, 100%, 50%);
 }
 form button a{
     text-decoration: none;
+}
+.span-required{
+    display: none;
+    margin: 3px 0 0 1px;
+    color: red;
+    font-size: 12px;
 }
 footer{
     width: 100%;
