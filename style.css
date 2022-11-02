@@ -265,3 +265,14 @@ footer{
     font-size: 15px;
     padding: 5px 50px;
 }
+.box-img{
+    text-align: center;
+    border: 1px solid hsl(30, 100%, 50%);
+    width: 700px;
+}
+.box-img img{
+    width: 100%;
+}
+.box-img figcaption{
+    color:gray;
+}
