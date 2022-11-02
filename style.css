@@ -282,3 +282,39 @@ figure{
 h2{
     text-align: center;
 }
+.dvlp{
+    display: flex;
+    justify-content: center;
+}
+.box-name{
+    margin:60px 20px;
+    padding-top:40px;
+    height:150px;
+    width:600px;
+    background-color: hsl(30, 100%, 50%);
+    color: black;
+    border-radius: 3px;
+}
+.box-name li p{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.box-img{
+    height: 150px;
+    width: auto;
+    margin-top: 60px; 
+    border: none;
+}
+.box-img li{
+    height: 100%;
+    list-style: none;
+}
+.box-img li figure {
+    height: 100%;
+    margin-right: 10px;
+}
+.box-img li figure img{
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 3px;
+}
