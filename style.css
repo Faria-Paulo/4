@@ -265,6 +265,9 @@ footer{
     font-size: 15px;
     padding: 5px 50px;
 }
+figure{
+    text-align: center;
+}
 .box-img{
     text-align: center;
     border: 1px solid hsl(30, 100%, 50%);
@@ -275,4 +278,7 @@ footer{
 }
 .box-img figcaption{
     color:gray;
+}
+h2{
+    text-align: center;
 }
