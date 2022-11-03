@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -48,15 +48,18 @@
     </header>
     <section>
         <h1>Faça seu login!</h1>
-    <form action="" method="post">
+    <form id="log" action="" method="post">
         <div>
+            <label id="labelEmail_log" for="email"></label>
             <input type="email" id="email_log" name="usuario_email" placeholder="Seu e-mail...">
         </div>
         <div>
+            <label id="labelSenha_log" for="email"></label>
             <input type="password" id="senha_log" name="usuario_senha" placeholder="Sua senha...">
         </div>
         <div>
-            <input type="submit" class="send" name="acao" value="Enviar" >
+            <!-- <input type="submit" class="send" name="acao" value="Enviar" > -->
+            <button onclick='entrar()'>Login</button>
         </div><br>
         <hr>
         <div class="signup">

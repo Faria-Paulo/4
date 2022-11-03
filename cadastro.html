@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem vindo a Unisoft</title>
+    <title>Cadastre-se</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -51,23 +51,23 @@
             <h1>Cadastre-se agora mesmo!</h1>
             <form id="form" action="" method="post">
                 <div>
-                    
-                    <input type="text" class="inputs required" oninput="nameValidate()"  name="usuario_nome" placeholder="Seu nome...">
+                    <label id="labelName" for="nome"></label>
+                    <input type="text" id="nome" class="inputs required" oninput="nameValidate()"  name="usuario_nome" placeholder="Seu nome...">
                     <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                 </div>
                 <div>
-                
-                    <input type="email" class="inputs required" oninput="emailValidate()"  name="usuario_email" placeholder="Seu e-mail...">
+                    <label id="labelEmail" for="email"></label>
+                    <input type="email" id="email" class="inputs required" oninput="emailValidate()"  name="usuario_email" placeholder="Seu e-mail...">
                     <span class="span-required">Digite um email válido</span>
                 </div>
                 <div>
-                    
-                    <input type="password" class="inputs required" oninput="mainPasswordValidate()" name="usuario_senha" placeholder="Sua senha...">
+                    <label id="labelPassword" for="password"></label>
+                    <input type="password" id="password" class="inputs required" oninput="mainPasswordValidate()" name="usuario_senha" placeholder="Sua senha...">
                     <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                 </div>
                 <div>
-                    
-                    <input type="password" class="inputs required" oninput="comparePassword()" name="usuario_senha_confirm" placeholder="Confirme sua senha...">
+                    <label id="labelConfirmPassword" for="confirmPassword"></label>
+                    <input type="password" id="confirmPassword" class="inputs required" oninput="comparePassword()" name="usuario_senha_confirm" placeholder="Confirme sua senha...">
                     <span class="span-required">As senhas devem ser compatíveis</span>
                 </div>
                 <div>
